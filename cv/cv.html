@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elijah Paul Mukwone - CV</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 0.5in;
+        }
+        
+        .cv-container {
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .name {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .title {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            opacity: 0.9;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+        }
+        
+        .content {
+            padding: 2rem;
+        }
+        
+        .section {
+            margin-bottom: 2rem;
+        }
+        
+        .section-title {
+            font-size: 1.4rem;
+            color: #3b82f6;
+            border-bottom: 2px solid #3b82f6;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+        
+        .summary {
+            font-size: 1rem;
+            text-align: justify;
+            line-height: 1.7;
+            color: #555;
+        }
+        
+        .experience-item, .education-item {
+            margin-bottom: 1.5rem;
+            padding-left: 1rem;
+            border-left: 3px solid #e5e7eb;
+            position: relative;
+        }
+        
+        .experience-item::before, .education-item::before {
+            content: '';
+            position: absolute;
+            left: -6px;
+            top: 0.5rem;
+            width: 10px;
+            height: 10px;
+            background: #3b82f6;
+            border-radius: 50%;
+        }
+        
+        .job-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 0.3rem;
+        }
+        
+        .company {
+            font-weight: 500;
+            color: #3b82f6;
+            margin-bottom: 0.2rem;
+        }
+        
+        .date {
+            font-size: 0.9rem;
+            color: #6b7280;
+            margin-bottom: 0.5rem;
+        }
+        
+        .description {
+            color: #555;
+            line-height: 1.6;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 0.5rem;
+        }
+        
+        .skill-category {
+            margin-bottom: 1rem;
+        }
+        
+        .skill-category h4 {
+            color: #1f2937;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        
+        .skill-tag {
+            background: #e0f2fe;
+            color: #0277bd;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+        
+        .projects-list {
+            list-style: none;
+        }
+        
+        .project-item {
+            margin-bottom: 1rem;
+            padding: 1rem;
+            background: #f8fafc;
+            border-radius: 6px;
+            border-left: 4px solid #3b82f6;
+        }
+        
+        .project-title {
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 0.3rem;
+        }
+        
+        .project-link {
+            color: #3b82f6;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        
+        .achievements {
+            background: #fef3c7;
+            padding: 1rem;
+            border-radius: 6px;
+            border-left: 4px solid #f59e0b;
+        }
+        
+        .achievements ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        .achievements li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .achievements li::before {
+            content: '★';
+            position: absolute;
+            left: 0;
+            color: #f59e0b;
+        }
+        
+        .print-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #3b82f6;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+        
+        @media print {
+            body {
+                padding: 0;
+                max-width: none;
+            }
+            .print-btn {
+                display: none;
+            }
+            .cv-container {
+                box-shadow: none;
+                border-radius: 0;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .contact-info {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            
+            .name {
+                font-size: 2rem;
+            }
+            
+            .content {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button class="print-btn" onclick="window.print()">Print/Save as PDF</button>
+    
+    <div class="cv-container">
+        <div class="header">
+            <h1 class="name">Elijah Paul Mukwone</h1>
+            <p class="title">Frontend Web Developer</p>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span>📧</span>
+                    <span>elijahpaul5346824@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <span>📱</span>
+                    <span>+234 906 744 4219</span>
+                </div>
+                <div class="contact-item">
+                    <span>📍</span>
+                    <span>26 Dare Street, Ikotun, Lagos State, Nigeria</span>
+                </div>
+                <div class="contact-item">
+                    <span>💼</span>
+                    <span>linkedin.com/in/elijah-paul-a21442288</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="content">
+            <div class="section">
+                <h2 class="section-title">Professional Summary</h2>
+                <p class="summary">
+                    Dedicated and results-driven Frontend Web Developer with 3+ years of experience in building modern, 
+                    user-centric applications using HTML, CSS, and JavaScript. Specializing in contemporary frameworks 
+                    such as Vue.js and React.js to develop scalable, high-performance web solutions. Currently operating 
+                    as a freelance developer and serving as an advocate for JD Lab Space Limited, Nigeria, with a proven 
+                    track record of educating and mentoring over 100 students in web development since August 2023.
+                </p>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">Professional Experience</h2>
+                
+                <div class="experience-item">
+                    <h3 class="job-title">Web Design Instructor</h3>
+                    <p class="company">J.D Labspace Academy</p>
+                    <p class="date">August 2024 - Present</p>
+                    <p class="description">
+                        • Teaching web design to over 100 students, ranging from beginners to advanced levels<br>
+                        • Developing comprehensive curriculum covering HTML, CSS, JavaScript, and modern frameworks<br>
+                        • Fostering passion for web development and contributing to the growth of the local tech community<br>
+                        • Mentoring students in best practices for responsive design and user experience<br>
+                        • Conducting hands-on workshops and project-based learning sessions
+                    </p>
+                </div>
+                
+                <div class="experience-item">
+                    <h3 class="job-title">Freelance Web Developer</h3>
+                    <p class="company">Self-Employed</p>
+                    <p class="date">2022 - Present</p>
+                    <p class="description">
+                        • Developing custom web applications using React.js, Vue.js, and vanilla JavaScript<br>
+                        • Creating responsive, mobile-first designs with modern CSS techniques<br>
+                        • Integrating APIs and third-party services for enhanced functionality<br>
+                        • Collaborating with clients to deliver solutions that meet business requirements<br>
+                        • Maintaining and updating existing web applications for optimal performance
+                    </p>
+                </div>
+                
+                <div class="experience-item">
+                    <h3 class="job-title">IT Instructor</h3>
+                    <p class="company">NYSC Orientation Camp - Niger State</p>
+                    <p class="date">2023 - 2024</p>
+                    <p class="description">
+                        • Served as IT instructor during National Youth Service Corps orientation program<br>
+                        • Taught basic computer skills and web development fundamentals to fellow corps members<br>
+                        • Developed training materials and conducted group workshops<br>
+                        • Provided technical support and guidance to participants<br>
+                        • Contributed to digital literacy initiatives in the community
+                    </p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">Education</h2>
+                
+                <div class="education-item">
+                    <h3 class="job-title">Bachelor of Science in Biology (Education)</h3>
+                    <p class="company">University of Jos, Plateau State</p>
+                    <p class="date">2016 - 2022</p>
+                    <p class="description">
+                        Completed Bachelor's Degree in Science and Education under Biology at the Federal University of Jos, 
+                        Department of Science and Technology. Developed strong analytical and research skills that complement 
+                        technical problem-solving abilities in web development.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">Technical Skills</h2>
+                
+                <div class="skill-category">
+                    <h4>Frontend Technologies</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript (ES6+)</span>
+                        <span class="skill-tag">React.js</span>
+                        <span class="skill-tag">Vue.js</span>
+                        <span class="skill-tag">Responsive Design</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>Backend Technologies</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Express.js</span>
+                        <span class="skill-tag">API Integration</span>
+                        <span class="skill-tag">RESTful Services</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>Database & Tools</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">Git/GitHub</span>
+                        <span class="skill-tag">Version Control</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>Other Skills</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Teaching & Mentoring</span>
+                        <span class="skill-tag">Technical Writing</span>
+                        <span class="skill-tag">Project Management</span>
+                        <span class="skill-tag">Problem Solving</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">Featured Projects</h2>
+                
+                <ul class="projects-list">
+                    <li class="project-item">
+                        <h4 class="project-title">eShop E-commerce Platform</h4>
+                        <p>A full-featured e-commerce platform with responsive design built using Vue.js, JavaScript, and CSS3. Features include product catalog, shopping cart, and user authentication.</p>
+                        <a href="https://eshop-ten-murex.vercel.app" class="project-link" target="_blank">Live Demo</a>
+                    </li>
+                    
+                    <li class="project-item">
+                        <h4 class="project-title">Currency Converter Application</h4>
+                        <p>Real-time currency converter with current exchange rates, historical rate tracking, and rate alerts. Built with Vue.js, Node.js/Express.js, and API integration.</p>
+                        <a href="https://currencyconverter.up.railway.app" class="project-link" target="_blank">Live Demo</a>
+                    </li>
+                    
+                    <li class="project-item">
+                        <h4 class="project-title">Personal Portfolio Website</h4>
+                        <p>Modern, responsive portfolio website showcasing work and skills with smooth animations and interactive elements. Built with HTML5, CSS3, and JavaScript.</p>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">Key Achievements</h2>
+                <div class="achievements">
+                    <ul>
+                        <li>Successfully taught and mentored over 100 students in web development</li>
+                        <li>Completed 5+ professional web development projects</li>
+                        <li>3+ years of hands-on experience in modern web technologies</li>
+                        <li>Active community contributor through teaching and advocacy work</li>
+                        <li>Experienced in both frontend and backend development</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">Personal Statement</h2>
+                <p class="summary">
+                    "Welcome to the world of Tech, Where code is our only Language" - This motto drives my passion for 
+                    web development and education. I believe in creating efficient, user-centric applications while 
+                    contributing to the growth of the tech community through teaching and mentoring. I am committed to 
+                    continuous learning and staying updated with the latest technologies and best practices in web development.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

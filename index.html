@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elijah Paul Mukwone</title>
+    <meta name="description" content="Elijah Paul Mukwone - Frontend Web Developer specializing in modern web technologies">
+   
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/layout.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+    <!-- favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='grad' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' stop-color='%233b82f6'/><stop offset='100%' stop-color='%238b5cf6'/></linearGradient><filter id='shadow' x='-20%' y='-20%' width='140%' height='140%'><feDropShadow dx='0' dy='0' stdDeviation='3' flood-color='%233b82f6' flood-opacity='0.3'/></filter></defs><rect width='100' height='100' rx='20' fill='url(%23grad)'/><path d='M30,30 L30,70 L70,70 L70,55 L50,55 L50,45 L70,45 L70,30 Z' fill='white' filter='url(%23shadow)'/></svg>">
+    
+    
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Elijah</span>
+            </div>
+            
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="hero-greeting">Hi, I'm</p>
+                    <h1 class="hero-name">Elijah Paul Mukwone</h1>
+                    <h2 class="hero-title">Frontend Web Developer</h2>
+                    <p class="hero-description">
+                        An enthusiastic and detail-oriented web developer with a strong focus on building efficient, 
+                        user-centric applications. I specialize in modern frameworks like React.js and Vue.js, 
+                        creating scalable solutions that enhance user experience.
+                    </p>
+                    
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                        <a href="cv/cv.html" 
+                           class="btn btn-secondary" target="_blank">
+                            <i class="fas fa-download"></i> Resume
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="images/passport.jpg" alt="Elijah Paul Mukwone" class="profile-image">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/elijah-paul-a21442288" class="social-link" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/elijahpaul" class="social-link" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://x.com/mukwone" class="social-link" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/elijahpaul5346824/" class="social-link" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            
+            <div class="scroll-indicator">
+                <a href="#about" class="scroll-link">
+                    <span class="scroll-text">Scroll Down</span>
+                    <i class="fas fa-arrow-down"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know more about who I am and what I do</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-description">
+                        <p>
+                            I am a dedicated and results-driven web developer with a strong focus on building modern, 
+                            user-centric applications using HTML, CSS, and JavaScript. I specialize in leveraging 
+                            contemporary frameworks such as Vue.js and React.js to develop scalable, high-performance 
+                            web solutions.
+                        </p>
+                        <p>
+                            Currently, I operate as a freelance developer and serve as an advocate for JD Lab Space Limited, 
+                            Nigeria. Since August 2023, I have been a core member of a team committed to educating and 
+                            mentoring young and adult learners who are passionate about web development.
+                        </p>
+                    </div>
+                    
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h3 class="stat-number">100+</h3>
+                            <p class="stat-label">Students Taught</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number">3+</h3>
+                            <p class="stat-label">Years Experience</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number">5+</h3>
+                            <p class="stat-label">Projects Completed</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-skills">
+                    <h3 class="skills-title">Technologies I Work With</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js-square"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-react"></i>
+                            <span>React.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-vuejs"></i>
+                            <span>Vue.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-node-js"></i>
+                            <span>Express.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Experience & Education</h2>
+                <p class="section-subtitle">My professional journey and academic background</p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title">Web Design Instructor</h3>
+                            <span class="timeline-company">J.D Labspace Academy</span>
+                            <span class="timeline-date">August 2024 - Present</span>
+                        </div>
+                        <p class="timeline-description">
+                            Teaching web design to over 100 students, ranging from beginners to advanced levels. 
+                            Fostering passion for web development and contributing to the growth of the local tech community.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">HTML/CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Teaching</span>
+                            <span class="tag">Mentoring</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title">IT Instructor</h3>
+                            <span class="timeline-company">NYSC Orientation Camp - Niger State</span>
+                            <span class="timeline-date">2023-2024</span>
+                        </div>
+                        <p class="timeline-description">
+                            Served as an IT instructor during the National Youth Service Corps orientation program, 
+                            teaching basic computer skills and web development fundamentals to fellow corps members.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">Digital Literacy</span>
+                            <span class="tag">Community Service</span>
+                            <span class="tag">Training</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title">Bachelor's Degree in Biology</h3>
+                            <span class="timeline-company">University of Jos</span>
+                            <span class="timeline-date">2016 - 2022</span>
+                        </div>
+                        <p class="timeline-description">
+                            Completed Bachelor's Degree in Science and Education under Biology at the Federal University of Jos, 
+                            Plateau State, Department of Science and Technology.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">Science</span>
+                            <span class="tag">Education</span>
+                            <span class="tag">Research</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Video Highlights -->
+            <div class="video-section">
+                <h3 class="video-title">Experience Highlights</h3>
+                <div class="video-grid">
+                    <div class="video-item">
+                        <div class="video-container">
+                            <video controls poster="images/jdlab-poster.jpg">
+                                <source src="videos/jd lab.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <h4 class="video-label">JD Labspace Academy</h4>
+                    </div>
+                    
+                    <div class="video-item">
+                        <div class="video-container">
+                            <video controls poster="images/nysc-poster.jpg">
+                                <source src="videos/nysc.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <h4 class="video-label">NYSC Camp Niger State</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Some of the projects I've worked on recently</p>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/eshop-preview.jpg" alt="eShop E-commerce Platform" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://eshop-ten-murex.vercel.app" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">eShop E-commerce Platform</h3>
+                        <p class="project-description">
+                            A full-featured e-commerce platform with responsive design
+                            
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Vuejs</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">Responsive</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/currency-preview.jpg" alt="Currency Converter" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://currencyconverter.up.railway.app" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Currency Converter App</h3>
+                        <p class="project-description">
+                            Real-time currency converter application with current exchange rates, 
+                            historical rate tracking, and rate alerts functionality.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Vuejs</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Nodejs/Express.js</span>
+                            <span class="tech-tag">API Integration</span>
+                            <span class="tech-tag">CSS3</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/portfolio-preview.jpg" alt="Portfolio Website" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Personal Portfolio</h3>
+                        <p class="project-description">
+                            Modern, responsive portfolio website showcasing my work and skills with 
+                            smooth animations and interactive elements.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Responsive</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Ready to work together? Let's create something amazing!</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>26 Dare Street, Ikotun<br>Lagos State, Nigeria</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+234 906 744 4219<br>+234 802 248 9878</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>elijahpaul5346824@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-social">
+                        <h4>Follow Me</h4>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/elijah-paul-a21442288" class="social-link">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://x.com/mukwone" class="social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://www.facebook.com/elijah.samuel.54772" class="social-link">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.instagram.com/elijahpaul5346824/" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject">
+                    </div>
+                    
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="6" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <span class="btn-text">Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section class="quote-section">
+        <div class="container">
+            <div class="quote-content">
+                <blockquote class="quote">
+                    <p>"Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work. And the only way to do great work is to love what you do."</p>
+                    <cite>— Steve Jobs</cite>
+                </blockquote>
+                
+                <div class="motto">
+                    <h3>My Motto</h3>
+                    <p>"Welcome to the world of Tech, Where code is our only Language"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Elijah Paul Mukwone. All rights reserved.</p>
+                    <p>Designed & Built with ❤️ by Elijah</p>
+                </div>
+                
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/elijah-paul-a21442288" class="social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://x.com/mukwone" class="social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.facebook.com/elijah.samuel.54772" class="social-link">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/elijahpaul5346824/" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Navigation Toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        }));
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Back to top button
+        const backToTopButton = document.getElementById('backToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const subject = formData.get('subject');
+            const message = formData.get('message');
+            
+            // Simple validation
+            if (!name || !email || !message) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+            
+            // Here you would typically send the data to your server
+            alert('Thank you for your message! I\'ll get back to you soon.');
+            this.reset();
+        });
+
+        // Add active class to navigation on scroll
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                if (scrollY >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        
+    </script>
+
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <i class="fas fa-sun theme-icon"></i>
+    </button>
+</body>
+</html>
