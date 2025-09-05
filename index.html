@@ -133,7 +133,7 @@
                             <p class="stat-label">Students Mentored</p>
                         </div>
                         <div class="stat-item">
-                            <h3 class="stat-number">3+</h3>
+                            <h3 class="stat-number">5+</h3>
                             <p class="stat-label">Years Experience</p>
                         </div>
                         <div class="stat-item">
@@ -183,13 +183,22 @@
                             <span>MongoDB</span>
                         </div>
                         <div class="skill-item">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" alt="Tailwind CSS">
+                            <svg width="40" height="40" viewBox="0 0 48 48" fill="none" aria-label="Tailwind CSS" xmlns="http://www.w3.org/2000/svg" style="display:block;">
+                                <path d="M24 12c-5.333 0-8.667 2.667-10 8 2-2.667 4.333-3.667 7-3 1.52.38 2.6 1.47 3.82 2.7C26.98 21.88 28.5 23.5 32 23.5c5.333 0 8.667-2.667 10-8-2 2.667-4.333 3.667-7 3-1.52-.38-2.6-1.47-3.82-2.7C29.02 14.12 27.5 12.5 24 12zm-10 12c-5.333 0-8.667 2.667-10 8 2-2.667 4.333-3.667 7-3 1.52.38 2.6 1.47 3.82 2.7C16.98 33.88 18.5 35.5 22 35.5c5.333 0 8.667-2.667 10-8-2 2.667-4.333 3.667-7 3-1.52-.38-2.6-1.47-3.82-2.7C17.02 26.12 15.5 24.5 14 24z" fill="#38BDF8"/>
+                            </svg>
                             <span>Tailwind CSS</span>
+                        </div>
+                         <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js">
+                            <span>Next.js</span>
+                        </div>
+                         <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuxtjs/nuxtjs-original.svg" alt="Nuxt.js">
+                            <span>Nuxt.js</span>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 
     <!-- Experience Section -->
@@ -506,21 +515,44 @@
                 
                 <form class="contact-form" id="contactForm">
                     <div class="form-group">
-                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Your Name"
+                            required
+                            style="width:100%;min-height:44px;padding:0.7rem 1.5rem;background:#18181b;border:2.5px solid #23232b;border-radius:1.2rem;color:#e2e8f0;font-size:1.08rem;box-shadow:0 4px 18px 0 rgba(30,41,59,0.14);outline:none;"
+                        >
                     </div>
-                    
                     <div class="form-group">
-                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Your Email"
+                            required
+                            style="width:100%;min-height:44px;padding:0.7rem 1.5rem;background:#18181b;border:2.5px solid #23232b;border-radius:1.2rem;color:#e2e8f0;font-size:1.08rem;box-shadow:0 4px 18px 0 rgba(30,41,59,0.14);outline:none;"
+                        >
                     </div>
-                    
                     <div class="form-group">
-                        <input type="text" id="subject" name="subject" placeholder="Subject">
+                        <input
+                            type="text"
+                            id="subject"
+                            name="subject"
+                            placeholder="Subject"
+                            style="width:100%;min-height:44px;padding:0.7rem 1.5rem;background:#18181b;border:2.5px solid #23232b;border-radius:1.2rem;color:#e2e8f0;font-size:1.08rem;box-shadow:0 4px 18px 0 rgba(30,41,59,0.14);outline:none;"
+                        >
                     </div>
-                    
                     <div class="form-group">
-                        <textarea id="message" name="message" placeholder="Your Message" rows="6" required></textarea>
+                        <textarea
+                            id="message"
+                            name="message"
+                            placeholder="Your Message"
+                            rows="4"
+                            required
+                            style="width:100%;min-height:70px;padding:0.7rem 1.5rem;background:#18181b;border:2.5px solid #23232b;border-radius:1.2rem;color:#e2e8f0;font-size:1.08rem;box-shadow:0 4px 18px 0 rgba(30,41,59,0.14);outline:none;resize:vertical;"
+                        ></textarea>
                     </div>
-                    
                     <button type="submit" class="btn btn-primary btn-full">
                         <span class="btn-text">Send Message</span>
                         <i class="fas fa-paper-plane"></i>
@@ -558,137 +590,8 @@
     <button class="back-to-top" id="backToTop">
         <i class="fas fa-arrow-up"></i>
     </button>
+    <!-- Main JS -->
+<script src="index.js"></script>
 
-    <!-- JavaScript -->
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-  // Mobile Navigation Toggle
-  const hamburger = document.querySelector('.hamburger');
-  const navMenu = document.querySelector('.nav-menu');
-
-  if (hamburger && navMenu) {
-    hamburger.addEventListener('click', () => {
-      hamburger.classList.toggle('active');
-      navMenu.classList.toggle('active');
-    });
-
-    // Close mobile menu when clicking on a link
-    document.querySelectorAll('.nav-link').forEach(link => {
-      link.addEventListener('click', () => {
-        hamburger.classList.remove('active');
-        navMenu.classList.remove('active');
-      });
-    });
-  }
-
-  // Smooth scrolling for navigation links
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-      const target = document.querySelector(this.getAttribute('href'));
-      if (target) {
-        target.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
-        });
-      }
-    });
-  });
-
-  // Back to Top Button
-  const backToTopButton = document.querySelector('.back-to-top');
-  if (backToTopButton) {
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 300) {
-        backToTopButton.classList.add('visible');
-      } else {
-        backToTopButton.classList.remove('visible');
-      }
-    });
-
-    backToTopButton.addEventListener('click', () => {
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-      });
-    });
-  }
-
-  // Form Submission
-  const contactForm = document.getElementById('contactForm');
-  if (contactForm) {
-    contactForm.addEventListener('submit', function (e) {
-      e.preventDefault();
-      
-      const formData = new FormData(this);
-      const name = formData.get('name');
-      const email = formData.get('email');
-      const subject = formData.get('subject');
-      const message = formData.get('message');
-      
-      if (!name || !email || !message) {
-        alert('Please fill in all required fields.');
-        return;
-      }
-      
-      alert('Thank you for your message! I\'ll get back to you soon.');
-      this.reset();
-    });
-  }
-
-  // Add active class to navigation on scroll
-  window.addEventListener('scroll', () => {
-    const sections = document.querySelectorAll('section[id]');
-    const navLinks = document.querySelectorAll('.nav-link');
-    
-    let current = '';
-    sections.forEach(section => {
-      const sectionTop = section.offsetTop - 100;
-      if (window.scrollY >= sectionTop) {
-        current = section.getAttribute('id');
-      }
-    });
-    
-    navLinks.forEach(link => {
-      link.classList.remove('active');
-      if (link.getAttribute('href') === '#' + current) {
-        link.classList.add('active');
-      }
-    });
-  });
-
-  // Set current year in footer
-  const yearElement = document.getElementById('year');
-  if (yearElement) {
-    yearElement.textContent = new Date().getFullYear();
-  }
-
-  // Scroll-triggered animations using Intersection Observer
-  const observerOptions = {
-    root: null, // Use the viewport as the root
-    rootMargin: '0px',
-    threshold: 0.1 // Trigger when 10% of the element is visible
-  };
-
-  const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        // Optionally unobserve the element after it becomes visible
-        // observer.unobserve(entry.target);
-      }
-    });
-  }, observerOptions);
-
-  // Target elements for scroll animations
-  const elements = document.querySelectorAll(
-    '.animate-on-scroll, .hero-content, .about-content, .projects-grid, .contact-content, .timeline, .footer-content, .project-card, .stat-item, .skill-item, .timeline-item, .contact-item'
-  );
-
-  elements.forEach(element => {
-    observer.observe(element);
-  });
-});
-    </script>
-</body>
+    </body>
 </html>
